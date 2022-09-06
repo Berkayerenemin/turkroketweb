@@ -103,19 +103,14 @@ body {
     text-transform: uppercase;
 }
 
-.about-main{
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-.blog-main {
+.blog-main, .about-main {
     display: grid;
     grid-template-columns: 65% 35%;
     margin-left: 50px;
     margin-top: 20px;  
 }
 
-.blog-container {
+.blog-container, .about-container {
     height: 810px;
     width: 100%;
     overflow: scroll;
@@ -127,6 +122,7 @@ body {
 .container{
     margin-right:50px; 
 }
+
 .container img {
     border-radius: 10px;
     height: 40vh;
@@ -182,6 +178,40 @@ body {
     width: 20px;
     margin-right: 10px;
 }
+
+.about-header{
+    font-size: 20px;
+}
+
+.volunteers{
+    height: 810px;
+    width: 100%;
+    overflow: scroll;
+    margin-left:20px;
+}
+
+.volunteer-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.volunteer{
+    display: flex;
+    flex-direction: row;
+}
+
+.volunteer-image{
+    border-radius: 10px;
+    height:200px;
+    width:200px;
+    object-fit: cover;
+}
+
+.volunteer-detail{
+    margin-bottom:20px;
+    margin-left:20px;
+}
+
 
 ::-webkit-scrollbar {
     display: none;
