@@ -103,14 +103,14 @@ body {
     text-transform: uppercase;
 }
 
-.blog-main, .about-main {
+.blog-main, .about-main, .project-main {
     display: grid;
     grid-template-columns: 65% 35%;
     margin-left: 50px;
     margin-top: 20px;  
 }
 
-.blog-container, .about-container {
+.blog-container, .about-container, .old-projects{
     height: 810px;
     width: 100%;
     overflow: scroll;
@@ -181,16 +181,18 @@ body {
 
 .about-header{
     font-size: 20px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -1px;
 }
 
-.volunteers{
+.volunteers, .newprojects{
     height: 810px;
     width: 100%;
     overflow: scroll;
     margin-left:20px;
 }
 
-.volunteer-list{
+.volunteer-list, .old-projects, .newprojects{
     display: flex;
     flex-direction: column;
 }
@@ -212,7 +214,77 @@ body {
     margin-left:20px;
 }
 
+.sponsors{
+    display: flex;
+    flex-direction: row;
+}
 
-::-webkit-scrollbar {
+.collaborators, .supporters{
+    margin-left:50px;
+}
+
+.supporters-paragraph{
+    margin-bottom:0.3px;
+}
+
+.old-project{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    margin-right:50px;
+    height: 100vh;
+    border-radius: 10px;
+    align-items: center;
+    background-color:#f9f9f9;
+}
+
+.newproject-image{
+    height: 500px;
+    width: 375px;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    /*max-height: 22vh;*/
+}
+
+.newproject-name{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.takvim{
+    display: flex;
+    /*grid-template-columns:10% 10% 10% 10% 10% 10% 10% ;*/
+    flex-direction: row;
+}
+
+.takvim-column{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    text-align:center;
+
+}
+
+.days{
+    margin-top:10px;
+}
+
+.days.header{
+    font-size: 20px;
+}
+
+.days.old{
+    color:#d4dade;
+}
+
+.days.selected{
+    border-radius: 50px;
+    background-color:#91adca;  
+}
+
+::-webkit-scrollbar{
     display: none;
-  }
+
+}
