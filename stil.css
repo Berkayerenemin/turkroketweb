@@ -103,14 +103,14 @@ body {
     text-transform: uppercase;
 }
 
-.blog-main, .about-main, .project-main {
+.blog-main, .about-main, .project-main, .volunteerpage-main {
     display: grid;
     grid-template-columns: 65% 35%;
     margin-left: 50px;
     margin-top: 20px;  
 }
 
-.blog-container, .about-container, .old-projects{
+.blog-container, .about-container, .old-projects, .volunteerpage-container{
     height: 810px;
     width: 100%;
     overflow: scroll;
@@ -179,7 +179,7 @@ body {
     margin-right: 10px;
 }
 
-.about-header{
+.about-header, .volunteerpage-header{
     font-size: 20px;
     color:rgb(36, 91, 149);
     letter-spacing: -1px;
@@ -197,7 +197,7 @@ body {
     flex-direction: column;
 }
 
-.volunteer{
+.volunteer, .sponsors{
     display: flex;
     flex-direction: row;
 }
@@ -212,11 +212,6 @@ body {
 .volunteer-detail{
     margin-bottom:20px;
     margin-left:20px;
-}
-
-.sponsors{
-    display: flex;
-    flex-direction: row;
 }
 
 .collaborators, .supporters{
@@ -264,7 +259,6 @@ body {
     flex-direction: column;
     margin-right: 10px;
     text-align:center;
-
 }
 
 .days{
@@ -282,6 +276,19 @@ body {
 .days.selected{
     border-radius: 50px;
     background-color:#91adca;  
+}
+
+.teams{
+    margin-right:20px;
+}
+
+.ayrac{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ayrac p{
+    margin-right: 10px;
 }
 
 ::-webkit-scrollbar{
