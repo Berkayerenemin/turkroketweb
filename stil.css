@@ -53,7 +53,7 @@ body {
     }
 
     body {
-        grid-template-columns: 5% 95%;
+        grid-template-columns: 11% 89%;
         grid-template-rows: 100%;   
     }
 
@@ -69,9 +69,7 @@ body {
 .menu-name img{
     margin-right:10px;
     height:20px;
-    }
-
-
+}
 
 .menu-name:hover{
     text-decoration: none;
@@ -160,10 +158,11 @@ body {
         display: none;
     }
 
-    .blog-main{
+    .blog-main, .about-main{
         display: grid;
         grid-template-columns: 100%;
     }
+
 
     .container{
         margin-left: 20px;
@@ -182,6 +181,10 @@ body {
 @media screen and (max-width:1028px){
     .blog-container{
         border-style:none;
+    }
+
+    .about-container{
+        border-style: none;
     }
 }
 
@@ -345,9 +348,82 @@ body {
     font-size:14px;
     margin-left:auto;
 }
-.volunteer, .sponsors{
+
+.about-paragraph{
+    margin-right:20px;
+}
+
+.mobile-volunteers{
+    display: none;
+}
+
+@media screen and (max-width:1028px){
+    .mobile-volunteers{
+        display:contents;
+    }
+
+    .volunteers{
+        display:none;
+    }
+}
+
+.sponsors{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+@media screen and (max-width:1252px){
+    .sponsors{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1028px){
+    .sponsors{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media screen and (max-width:848px){
+    .sponsors{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.volunteer{
     display: flex;
     flex-direction: row;
+}
+
+@media screen and (max-width:1247px){
+    .volunteer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1028px){
+    .volunteer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .volunteer + .volunteer{
+        margin-top:10px;
+    }
+
+}
+
+@media screen and (max-width:505px){
+    .volunteer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .right-header{
@@ -391,8 +467,30 @@ body {
     margin-left:20px;
 }
 
-.collaborators, .supporters{
-    margin-left:50px;
+
+@media screen and (max-width:1805px){
+    .volunteer-detail{
+    margin-right:20px;
+    }
+
+    .volunteer-paragraph{
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width:1247px){
+
+    .volunteer-detail{
+        margin-left:0px;
+    }
+}
+
+@media screen and (max-width:1028px){
+    .volunteer-detail{
+        margin-left:20px;
+
+    }
 }
 
 .supporters-paragraph{
