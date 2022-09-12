@@ -158,7 +158,7 @@ body {
         display: none;
     }
 
-    .blog-main, .about-main{
+    .blog-main, .about-main, .project-main{
         display: grid;
         grid-template-columns: 100%;
     }
@@ -184,6 +184,10 @@ body {
     }
 
     .about-container{
+        border-style: none;
+    }
+
+    .old-projects{
         border-style: none;
     }
 }
@@ -508,9 +512,15 @@ body {
     background-color:#f9f9f9;
 }
 
+@media screen and (max-width:1028px){
+    .newprojects{
+        display:none;
+    }
+}
+
 .newproject-image{
     height: 500px;
-    width: 375px;
+    width: 80%;
     border-radius: 10px;
     display: block;
     object-fit: cover;
@@ -521,6 +531,20 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+}
+
+.newproject-name + p {
+    margin-right:50px;
+}
+
+.mobile-newprojects{
+    display:none;   
+}
+
+@media screen and (max-width:1028px){
+    .mobile-newprojects{
+        display: contents;
+    }
 }
 
 .takvim{
@@ -551,6 +575,16 @@ body {
 .days.selected{
     border-radius: 50px;
     background-color:#91adca;  
+}
+
+.mobile-calendar{
+    display: none;
+}
+
+@media screen and (max-width:1028px){
+    .mobile-calendar{
+        display: contents;
+    }
 }
 
 .teams{
