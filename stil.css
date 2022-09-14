@@ -146,7 +146,7 @@ body {
     text-transform: uppercase;
 }
 
-.blog-main, .about-main, .project-main, .volunteerpage-main {
+.blog-main, .about-main, .project-main, .volunteerpage-main{
     display: grid;
     grid-template-columns: 65% 35%;
     margin-left: 50px;
@@ -158,7 +158,7 @@ body {
         display: none;
     }
 
-    .blog-main, .about-main, .project-main{
+    .blog-main, .about-main, .project-main, .volunteerpage-main{
         display: grid;
         grid-template-columns: 100%;
     }
@@ -167,6 +167,19 @@ body {
     .container{
         margin-left: 20px;
     }
+}
+
+.privacy-main{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.privacy-container{
+    height: 810px;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column
 }
 
 .blog-container, .about-container, .old-projects, .volunteerpage-container{
@@ -188,6 +201,10 @@ body {
     }
 
     .old-projects{
+        border-style: none;
+    }
+
+    .volunteerpage-container{
         border-style: none;
     }
 }
@@ -591,6 +608,10 @@ body {
     margin-right:20px;
 }
 
+.volunteerpage-container p {
+    margin-right:20px;
+}
+
 .ayrac{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -598,6 +619,49 @@ body {
 
 .ayrac p{
     margin-right: 10px;
+}
+
+@media screen and (max-width:667px){
+    .ayrac{
+        display: grid;
+        grid-template-columns: 100%;
+    }   
+}
+
+@media screen and (max-width:1292px){
+    .volunteers iframe{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:1195px){
+    .volunteers iframe{
+        width: 325px;
+    }
+}
+
+@media screen and (max-width:1125px){
+    .volunteers iframe{
+        width: 300px;
+    }
+}
+
+.mobile-formadress{
+    text-decoration: none;
+}
+
+.mobile-formpage{
+    display: none;
+}
+
+@media screen and (max-width:1028px){
+    .mobile-formpage{
+        display: contents;
+    }
+}
+
+.privacy-main{
+    margin-left:50px;
 }
 
 .creative-commons{
@@ -611,7 +675,6 @@ body {
 .creative-commons + .creative-commons{
     padding-top: 10px;
 }
-
 
 ::-webkit-scrollbar{
     display: none;
