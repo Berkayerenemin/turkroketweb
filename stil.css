@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
-html {
+:root{
     outline: none;
-    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    overflow: hidden;
 }
-    
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+}
+
 body {
     display: grid;
     grid-template-columns: 20% 70%;
-    grid-template-rows: 100%;
-    background-color: fff;
+    background-color: #fff;
     font-family: "Inter", "sans-serif";
-    height: 100%;
+    margin:0;
 }
 
 @media screen and (max-width:1805px){
@@ -31,13 +36,14 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom:50px;
     margin-left:auto;
     font-size: 14px;
     text-align: center;
     border-right: 1px solid #94918f;
-    height: 90vh;
     padding-right: 20px;
+    min-height: 350px;
 }
 
 .menu-name {
@@ -93,12 +99,11 @@ body {
 .blog {
     display: flex;
     flex-direction: column;
-    height:100vh
+    height:100vh;
 }
 
 .main-header{
-    /*display: grid;
-    grid-template-columns: 100%;*/
+    height:5rem;
     border-bottom: 1px solid #94918f;
     margin-left:50px;
     margin-right:50px;
@@ -146,11 +151,17 @@ body {
     text-transform: uppercase;
 }
 
+.blog-right-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .blog-main, .about-main, .project-main, .volunteerpage-main{
     display: grid;
     grid-template-columns: 65% 35%;
-    margin-left: 50px;
-    margin-top: 20px;  
+    height:calc(100vh - 5rem);
+    padding-left: 50px;
+    padding-top: 20px; 
 }
 
 @media screen and (max-width:1028px){
@@ -162,7 +173,6 @@ body {
         display: grid;
         grid-template-columns: 100%;
     }
-
 
     .container{
         margin-left: 20px;
@@ -183,12 +193,12 @@ body {
 }
 
 .blog-container, .about-container, .old-projects, .volunteerpage-container{
-    height: 810px;
     width: 100%;
     overflow: scroll;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #94918f;
+    padding-bottom:50px;
 }
 
 @media screen and (max-width:1028px){
@@ -326,9 +336,9 @@ body {
 }
 
 .right-containers{
-    overflow: scroll;
-    height:650px;
-    margin-bottom:10px;
+    overflow: auto;
+    height:calc(100vh - 250px);
+    padding-bottom:20px;
 }
 
 .right-container img{
@@ -340,8 +350,8 @@ body {
 }
 
 .right-container{
-    margin-left:20px;
-    margin-right:55px;
+    padding-left:20px;
+    padding-right:55px;
     border-bottom:1px solid #94918f;
 }
 
@@ -665,12 +675,12 @@ body {
 }
 
 .creative-commons{
-    margin-left:20px;
-    margin-right: 50px;
+    padding-left:20px;
     padding-right: 50px;
-    padding-bottom: 10px;
+    padding-right: 50px;
+    /* padding-bottom: 10px; */
     font-size:14px;
-    border-bottom: 1px solid #94918f;
+    /* border-bottom: 1px solid #94918f; */
 }
 .creative-commons + .creative-commons{
     padding-top: 10px;
