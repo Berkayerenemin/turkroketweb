@@ -96,6 +96,20 @@ body {
     }
 }
 
+.menuprivacy{
+    display: none;
+}
+
+.menuprivacy img{
+    margin-top:20px;
+}
+
+@media screen and (max-width:1028px){
+    .menuprivacy{
+        display: contents;
+    }
+}
+
 .blog {
     display: flex;
     flex-direction: column;
@@ -185,11 +199,11 @@ body {
 }
 
 .privacy-container{
-    height: 810px;
     width: 100%;
     overflow: scroll;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    height:calc(100vh - 5rem);
 }
 
 .blog-container, .about-container, .old-projects, .volunteerpage-container{
