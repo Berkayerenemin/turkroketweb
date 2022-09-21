@@ -1,0 +1,163 @@
+@import url("stylemain.css");
+
+.about-main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height:calc(100vh - 5rem);
+    padding-left: 50px;
+    padding-top: 20px; 
+}
+
+@media screen and (max-width:1028px){
+    .about-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+.about-container{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #94918f;
+    padding-bottom:50px;
+}
+
+@media screen and (max-width:1028px){
+    .about-container{
+        border-style: none;
+    }
+}
+
+.about-header{
+    font-size: 20px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -1px;
+}
+
+.volunteers{
+    height: 810px;
+    width: 100%;
+    overflow: scroll;
+    margin-left:20px;
+}
+
+.volunteer-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-paragraph{
+    margin-right:20px;
+}
+
+.mobile-volunteers{
+    display: none;
+}
+
+@media screen and (max-width:1028px){
+    .mobile-volunteers{
+        display:contents;
+    }
+
+    .volunteers{
+        display:none;
+    }
+}
+
+.volunteer{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:1247px){
+    .volunteer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1028px){
+    .volunteer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .volunteer + .volunteer{
+        margin-top:10px;
+    }
+
+}
+
+@media screen and (max-width:505px){
+    .volunteer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.volunteer-image{
+    border-radius: 10px;
+    height:200px;
+    width:200px;
+    object-fit: cover;
+}
+
+.volunteer-detail{
+    margin-bottom:20px;
+    margin-left:20px;
+}
+
+
+@media screen and (max-width:1805px){
+    .volunteer-detail{
+    margin-right:20px;
+    }
+
+    .volunteer-paragraph{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1247px){
+
+    .volunteer-detail{
+        margin-left:0px;
+    }
+}
+
+@media screen and (max-width:1028px){
+    .volunteer-detail{
+        margin-left:20px;
+
+    }
+}
+
+.sponsors{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+@media screen and (max-width:1252px){
+    .sponsors{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1028px){
+    .sponsors{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media screen and (max-width:848px){
+    .sponsors{
+        display: flex;
+        flex-direction: column;
+    }
+}

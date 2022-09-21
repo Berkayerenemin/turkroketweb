@@ -1,0 +1,170 @@
+@import url("stylemain.css");
+
+.article-main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height:calc(100vh - 5rem);
+    padding-left: 50px;
+    padding-top: 20px; 
+}
+
+@media screen and (max-width:1028px){
+    .article-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+.article-container{
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:50px;
+    padding-right: 50px;
+    border-right: 1px solid #94918f;
+}
+
+@media screen and (max-width:1028px){
+    .article-container{
+        border-style:none;
+    }
+}
+
+@media screen and (max-width:660px){
+    .article-container{
+        margin-right:20px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .article-container{
+        margin-right:10px;
+    }
+}
+
+.article-container p {
+    line-height: 1.5;
+    margin: 14px 0;
+}
+
+#article-header{
+    font-size: 30px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.about-header{
+    font-size: 19px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -1px;
+}
+
+.article-container-detail{
+    display: flex;
+}
+
+.article-main-img{
+    border-radius: 10px;
+    height: 40vh;
+    /*max-height: 22vh;*/
+    width: 100%;
+}
+
+#turbojet-one{
+    display: flex;
+}
+
+#turbojet-img-one{
+    max-width: 500px;
+    max-height:250px;
+}
+
+#turbojet-two{
+    display: flex;
+}
+
+#turbojet-img-two{
+    max-width:500px;
+}
+
+.article-right-container{
+    padding-left:20px;
+}
+
+.reading-time{
+    margin-left:auto;
+}
+
+#turbojet-three{
+    display: flex;
+}
+
+#turbojet-img-three{
+    object-fit: cover;
+    width:100px;
+    height:100px;
+    border-radius: 5px;
+}
+
+#author{
+    margin-left:20px;
+    padding-right:40px;
+}
+
+#author p{
+    font-size:14px;
+}
+
+.powr-comments{
+    padding-right: 40px;
+    height:500px;
+}
+
+@media screen and (max-width:1344px){
+    #turbojet-one{
+        display: block;
+    }
+
+    #turbojet-two{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1028px){
+    .article-right-container{
+        display: none;
+    }
+
+    #turbojet-one{
+        display: flex;
+    }
+
+    #turbojet-two{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width:907px){
+    #turbojet-one{
+        display: block;
+    }
+}
+
+@media screen and (max-width:907px){
+    #turbojet-two{
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px){
+    #turbojet-img-one{
+        width:100%
+    }
+
+    #turbojet-img-two{
+        width:100%
+    }
+}
+/*-----------------------------------------------*/

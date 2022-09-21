@@ -1,0 +1,89 @@
+@import url("stylemain.css");
+
+.project-main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height:calc(100vh - 5rem);
+    padding-left: 50px;
+    padding-top: 20px; 
+}
+
+@media screen and (max-width:1028px){
+    .project-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+.old-projects{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #94918f;
+    padding-bottom:50px;
+}
+
+@media screen and (max-width:1028px){
+    .old-projects{
+        border-style: none;
+    }
+}
+
+.about-header{
+    font-size: 20px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -1px;
+}
+.old-project{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    margin-right:50px;
+    height: 100vh;
+    border-radius: 10px;
+    align-items: center;
+    background-color:#f9f9f9;
+}
+
+@media screen and (max-width:1028px){
+    .newprojects{
+        display:none;
+    }
+}
+
+.newproject-image{
+    height: 500px;
+    width: 80%;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    /*max-height: 22vh;*/
+}
+
+.newproject-name{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.newproject-name + p {
+    margin-right:50px;
+}
+
+.mobile-newprojects{
+    display:none;   
+}
+
+@media screen and (max-width:1028px){
+    .mobile-newprojects{
+        display: contents;
+    }
+}
+
+.newprojects{
+    height: 810px;
+    width: 100%;
+    overflow: scroll;
+    margin-left:20px;
+}

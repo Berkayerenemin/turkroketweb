@@ -1,0 +1,253 @@
+@import url("stylemain.css");
+
+.blog-main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height:calc(100vh - 5rem);
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.blog-right-container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1028px){
+    .blog-right-container{
+        display: none;
+    }
+
+    .blog-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .container{
+        margin-left: 20px;
+    }
+}
+
+.privacy-main{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.privacy-container{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    height:calc(100vh - 5rem);
+}
+
+.blog-container{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #94918f;
+    padding-bottom:50px;
+}
+
+@media screen and (max-width:1028px){
+    .blog-container{
+        border-style:none;
+    }
+}
+
+.container{
+    margin-right:50px; 
+}
+
+@media screen and (max-width:660px){
+    .container{
+        margin-right:20px;
+    }
+
+}
+
+@media screen and (max-width:540px){
+    .container{
+        margin-right:10px;
+    }
+}
+
+.container img {
+    border-radius: 10px;
+    height: 40vh;
+    /*max-height: 22vh;*/
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:850px){
+    .container img{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width:540px){
+    .container img{
+        height: 15vh;
+    }
+}
+
+.container:not(:first-child) img{
+    margin-top:20px;
+}
+
+.container h2 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 10px 0 8px;
+}
+
+@media screen and (max-width:660px){
+    .container h2{
+        font-size:20px;
+    }
+}
+
+.container h2 span {
+    font-family: "Roboto","Inconsolata";
+}
+
+.container-detail{
+    display: flex;
+    flex-direction: row;
+}
+
+.reading-time{
+    display: inline-block;
+    margin-left:auto;
+}
+
+@media screen and (max-width:660px){
+    .reading-time{
+        display: none;
+    }
+
+}
+
+.container p {
+    line-height: 1.5;
+    margin: 14px 0;
+}
+
+.container a {
+    color: #161419;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+    border-bottom: 1px solid #94918f;
+    padding-top: 14px;
+    padding-bottom:14px;
+}
+
+.container a svg {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.right-containers{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-containers{
+    overflow: auto;
+    height:calc(100vh - 250px);
+    padding-bottom:20px;
+}
+
+.right-container img{
+    border-radius: 10px;
+    height: 15vh;
+    /*max-height: 22vh;*/
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-container{
+    padding-left:20px;
+    padding-right:55px;
+    border-bottom:1px solid #94918f;
+}
+
+@media screen and (max-width:1405px){
+    .right-container{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1294px){
+    .right-container{
+        margin-right: 5px;
+    }
+}
+
+.right-container:not(:first-child){
+    margin-top:10px;
+}
+
+.right-blog{
+    font-size:14px;
+}
+
+.container-detail-right span{
+    font-size:14px;
+    padding-right:10px;
+}
+
+.right-header{
+    font-size: 20px;    
+    margin: 10px 0 8px;
+}
+
+@media screen and (max-width:1247px){
+    .right-header{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:1137px){
+    .right-header{
+        font-size:16px;
+    }
+    .right-blog{
+        font-size:12px;
+    }
+    .container-detail-right span{
+        font-size:12px;
+    }
+
+}
+
+@media screen and (max-width:1168px){
+    .container-detail-right span + span{
+        display: none;
+    }
+}
+
+.privacy-main{
+    margin-left:50px;
+}
+
+.creative-commons{
+    padding-top: 10px;
+    padding-left:20px;
+    padding-right: 50px;
+    /* padding-bottom: 10px; */
+    font-size:14px;
+    /* border-bottom: 1px solid #94918f; */
+}
+.creative-commons + .creative-commons{
+    padding-top: 10px;
+}
+

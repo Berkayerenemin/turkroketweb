@@ -1,0 +1,105 @@
+@import url("stylemain.css");
+
+.a-main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height:calc(100vh - 5rem);
+    padding-left: 50px;
+    padding-top: 20px; 
+}
+
+@media screen and (max-width:1028px){
+    .a-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+.old-as{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #94918f;
+    padding-bottom:50px;
+}
+
+@media screen and (max-width:1028px){
+    .old-as{
+        border-style: none;
+    }
+}
+
+.about-header{
+    font-size: 20px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -1px;
+}
+.old-a{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    margin-right:50px;
+    height: 100vh;
+    border-radius: 10px;
+    align-items: center;
+    background-color:#f9f9f9;
+}
+
+@media screen and (max-width:1028px){
+    .newas{
+        display:none;
+    }
+}
+
+.newas{
+    height: 810px;
+    width: 100%;
+    overflow: scroll;
+    margin-left:20px;
+}
+
+.takvim{
+    display: flex;
+    /*grid-template-columns:10% 10% 10% 10% 10% 10% 10% ;*/
+    flex-direction: row;
+}
+
+.takvim-column{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    text-align:center;
+}
+
+.days{
+    margin-top:10px;
+}
+
+.days.header{
+    font-size: 20px;
+}
+
+.days.old{
+    color:#d4dade;
+}
+
+.days.selected{
+    border-radius: 50px;
+    background-color:#91adca;  
+}
+
+.mobile-calendar{
+    display: none;
+}
+
+@media screen and (max-width:1028px){
+    .mobile-calendar{
+        display: contents;
+    }
+}
+
+.teams{
+    margin-right:20px;
+}
+

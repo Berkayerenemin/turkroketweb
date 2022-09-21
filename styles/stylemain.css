@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root{
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    background-color: #fff;
+    font-family: "Inter", "sans-serif";
+    margin:0;
+}
+
+@media screen and (max-width:1805px){
+    body{
+        grid-template-columns: 20% 80%;
+    }
+}
+
+@media screen and (max-width:1579px){
+    body{
+        grid-template-columns: 10% 90%;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom:50px;
+    margin-left:auto;
+    font-size: 14px;
+    text-align: center;
+    border-right: 1px solid #94918f;
+    padding-right: 20px;
+    min-height: 350px;
+}
+
+.menu-name {
+    display: flex;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: #161419;
+}
+
+@media screen and (max-width:1028px){
+    .menu-name span{
+        display: none;
+    }
+
+    body {
+        grid-template-columns: 11% 89%;
+        grid-template-rows: 100%;   
+    }
+
+    .menu{
+        padding-right:0px;
+    }
+
+    .menu-name img{
+        margin-left:20px;   
+    }
+}
+
+.menu-name img{
+    margin-right:10px;
+    height:20px;
+}
+
+.menu-name:hover{
+    text-decoration: none;
+    color:rgb(36, 91, 149)
+}
+
+.menu-name + .menu-name {
+    margin-top: 20px;
+}
+
+.menu-name.mention {
+    margin-top: auto;
+}
+
+@media screen and (max-width:1137px){
+    .menu{
+        padding-right:10px; 
+    }
+}
+
+.menuprivacy{
+    display: none;
+}
+
+.menuprivacy img{
+    margin-top:20px;
+}
+
+@media screen and (max-width:1028px){
+    .menuprivacy{
+        display: contents;
+    }
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+
+.main-header{
+    height:5rem;
+    border-bottom: 1px solid #94918f;
+    margin-left:50px;
+    margin-right:50px;
+
+}
+
+.header {
+    font-size: 45px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2px;
+    /*line-height: 1;*/
+    padding-top:10px;   
+    padding-bottom:10px;
+    text-align: center;
+}
+
+.header-image{
+    height: 65px;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    /*max-height: 22vh;*/
+}
+
+.link{
+    color: #000;
+    text-decoration: none;
+}
+
+.link:hover{
+    color:rgb(36, 91, 149)
+}
+
+::-webkit-scrollbar{
+    display: none;
+
+}

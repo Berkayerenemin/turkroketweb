@@ -1,0 +1,108 @@
+@import url("stylemain.css");
+
+.volunteerpage-main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height:calc(100vh - 5rem);
+    padding-left: 50px;
+    padding-top: 20px; 
+}
+
+@media screen and (max-width:1028px){
+
+    .volunteerpage-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+.volunteerpage-container{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #94918f;
+    padding-bottom:50px;
+}
+
+@media screen and (max-width:1028px){
+    .volunteerpage-container{
+        border-style: none;
+    }
+}
+
+.volunteerpage-header{
+    font-size: 20px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -1px;
+}
+
+.teams{
+    margin-right:20px;
+}
+
+.volunteerpage-container p {
+    margin-right:20px;
+}
+
+.ayrac{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ayrac p{
+    margin-right: 10px;
+}
+
+@media screen and (max-width:667px){
+    .ayrac{
+        display: grid;
+        grid-template-columns: 100%;
+    }   
+}
+
+@media screen and (max-width:1292px){
+    .volunteers iframe{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:1195px){
+    .volunteers iframe{
+        width: 325px;
+    }
+}
+
+@media screen and (max-width:1125px){
+    .volunteers iframe{
+        width: 300px;
+    }
+}
+
+.mobile-formadress{
+    text-decoration: none;
+}
+
+.mobile-formpage{
+    display: none;
+}
+
+@media screen and (max-width:1028px){
+    .mobile-formpage{
+        display: contents;
+    }
+}
+
+.volunteers{
+    height: 810px;
+    width: 100%;
+    overflow: scroll;
+    margin-left:20px;
+}
+
+@media screen and (max-width:1028px){
+    .volunteers{
+        display:none;
+    }
+}
+
