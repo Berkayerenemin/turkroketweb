@@ -8,6 +8,13 @@
     padding-top: 20px;
 }
 
+@media screen and (max-width:1028px){
+    .user-blog-main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
 .user-blog-left{
     overflow: hidden;
     width: 100%;
@@ -17,9 +24,37 @@
     padding-bottom:50px;
 }
 
+@media screen and (max-width:1028px){
+    .user-blog-left{
+        border-style:none;
+    }
+
+    .user-blog-main{
+        height: calc(100vh - 6rem);
+    }
+}
+
+
+
 .user-blog-right{
     overflow: scroll;
 }
+
+@media screen and (max-width:1028px){
+    .user-blog-right{
+        display: none;
+    }
+
+    #allarticles{
+        display: none;
+    }
+
+    .container{
+        border-bottom:1px solid #94918f;
+    }
+}
+
+
 
 .blog-name{
     padding-left: 50px;
@@ -29,6 +64,13 @@
 .blog-name{
     display: grid;
     grid-template-columns: 65% 35%;
+}
+
+@media screen and (max-width:1028px){
+    .blog-name{
+        display: grid;
+        grid-template-columns: 100%;
+    }
 }
 
 .about-header{
@@ -41,6 +83,19 @@
     margin-right:50px; 
 }
 
+@media screen and (max-width:660px){
+    .container{
+        margin-right:20px;
+    }
+
+}
+
+@media screen and (max-width:540px){
+    .container{
+        margin-right:10px;
+    }
+}
+
 .container img {
     border-radius: 10px;
     height: 40vh;
@@ -49,11 +104,29 @@
     object-fit: cover;
 }
 
+@media screen and (max-width:850px){
+    .container img{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width:540px){
+    .container img{
+        height: 15vh;
+    }
+}
+
 .container h2 {
     font-size: 26px;
     font-weight: 500;
     line-height: 1.2;
     margin: 10px 0 8px;
+}
+
+@media screen and (max-width:660px){
+    .container h2{
+        font-size:20px;
+    }
 }
 
 .container-detail{
@@ -64,6 +137,14 @@
 .reading-time{
     display: inline-block;
     margin-left:auto;
+}
+
+
+@media screen and (max-width:660px){
+    .reading-time{
+        display: none;
+    }
+
 }
 
 .container p {
@@ -93,6 +174,18 @@
     margin-top:10px;
 }
 
+@media screen and (max-width:1405px){
+    .right-container{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1294px){
+    .right-container{
+        margin-right: 5px;
+    }
+}
+
 .container-detail-right span{
     font-size:14px;
     padding-right:10px;
@@ -105,4 +198,135 @@
 
 .right-container p{
     font-size: 14px;
+}
+
+.right-blog{
+    font-size:14px;
+}   
+
+@media screen and (max-width:1247px){
+    .right-header{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:1137px){
+    .right-header{
+        font-size:16px;
+    }
+
+    .right-blog{
+        font-size:12px;
+    }
+
+    .container-detail-right span{
+        font-size:12px;
+    }
+
+}
+
+@media screen and (max-width:1168px){
+    .container-detail-right span + span{
+        display: none;
+    }
+}
+
+.mobilenewarticle{
+    display:none;
+}
+
+.mobile-blog-all{
+    display:none
+}
+
+@media screen and (max-width:1028px){
+    .mobile-blog-all{
+        display: contents;
+    }
+
+    .user-blog-left{
+        overflow: scroll;
+    }
+
+    .blog-name{
+        display: none;
+    }
+
+    .mobilenewarticle{
+        display: contents;
+    }
+}
+
+
+.mobile-right-container{
+    margin-right:50px; 
+}
+
+@media screen and (max-width:660px){
+    .mobile-right-container{
+        margin-right:20px;
+    }
+
+}
+
+@media screen and (max-width:540px){
+    .mobile-right-container{
+        margin-right:10px;
+    }
+}
+
+.mobile-right-container img {
+    border-radius: 10px;
+    height: 40vh;
+    /*max-height: 22vh;*/
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:850px){
+    .mobile-right-container img{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width:540px){
+    .mobile-right-container img{
+        height: 15vh;
+    }
+}
+
+.mobile-right-header{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 10px 0 8px;
+}
+
+@media screen and (max-width:660px){
+    .mobile-right-header{
+        font-size:20px;
+    }
+}
+
+.mobile-container-detail-right{
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile-reading-time{
+    display: inline-block;
+    margin-left:auto;
+}
+
+
+@media screen and (max-width:660px){
+    .mobile-reading-time{
+        display: none;
+    }
+
+}
+
+.mobile-right-container p {
+    line-height: 1.5;
+    margin: 14px 0;
 }
