@@ -1,0 +1,20 @@
+@import url("stylemain.css");
+
+.authors-blog-main{
+    height: calc(100vh - 5rem);
+    padding-left: 50px;
+    padding-top: 20px;
+    overflow: scroll;
+    padding-right:50px;
+}
+
+.about-header{
+    font-size: 19px;
+    color:rgb(36, 91, 149);
+    letter-spacing: -1px;
+}
+
+.authors-link{
+    text-decoration: none;
+}
+
