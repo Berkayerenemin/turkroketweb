@@ -24,7 +24,7 @@
     }
 
     .container{
-        margin-left: 20px;
+        margin-left: 0px;
     }
 }
 
@@ -62,7 +62,11 @@
 
 @media screen and (max-width:660px){
     .container{
-        margin-right:20px;
+        padding-right:10px;
+    }
+
+    .blog-main{
+        padding-left:40px;
     }
 
 }
