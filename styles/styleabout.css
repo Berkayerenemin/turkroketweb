@@ -97,10 +97,6 @@
         align-items: left;
         text-align: left;
     }
-
-    .volunteer-detail{
-        margin-left:0px;
-    }
 }
 
 .volunteer-image{
@@ -136,7 +132,12 @@
 @media screen and (max-width:1028px){
     .volunteer-detail{
         margin-left:20px;
+    }
+}
 
+@media screen and (max-width:505px){
+    .volunteer-detail{
+        margin-left:0px;
     }
 }
 
