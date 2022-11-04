@@ -364,3 +364,71 @@
     }
 
 }
+
+/*-----------------------------------------------*/
+
+
+#ruzgaroku-one{
+    display: flex;
+}
+
+#ruzgaroku-img-one{
+    width: 550px;
+    border-radius: 5px;
+}
+
+#ruzgaroku-one p{
+    padding-left: 20px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+#ruzgaroku-two{
+    display: flex;
+}
+
+#ruzgaroku-two p{
+    padding-right:20px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+#ruzgaroku-img-two{
+    border-radius: 5px;
+}
+
+#ruzgaroku-three{
+    display: flex;
+}
+
+#ruzgaroku-three p{
+    padding-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#ruzgaroku-img-three{
+    border-radius: 5px;
+}
+
+#ruzgaroku-four{
+    display: flex;
+}
+
+#ruzgaroku-img-four{
+    width: 250px;
+    border-radius: 5px;
+}
+
+#ruzgaroku-four p{
+    padding-right:20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#ruzgaroku-img-five{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 5px;
+}
