@@ -527,3 +527,17 @@
 
 /*-----------------------------------------------*/
 
+#itmekuvveti-img-one{
+    max-width: 600px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#itmekuvveti-img-two{
+    width:200px;
+}
+
+#itmekuvveti-img-four{
+    width:200px;
+}
