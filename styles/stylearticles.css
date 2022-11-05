@@ -427,8 +427,103 @@
 }
 
 #ruzgaroku-img-five{
-    width:75%;
+    max-width: 600px;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
     border-radius: 5px;
 }
+
+
+@media screen and (max-width:1406px){
+    #ruzgaroku-one{
+        display: block;
+    }
+
+    #ruzgaroku-one p{
+        padding-left: 0px;
+        padding-top:20px;
+        margin-top:none;
+        margin-bottom: none;
+    }
+}
+
+@media screen and (max-width:1180px){
+    #ruzgaroku-three{
+        display: block;
+    }
+
+    #ruzgaroku-three p{
+        padding-left: 0px;
+        margin-top: none;
+        margin-bottom: none;
+    }
+}
+
+
+@media screen and (max-width:1028px){
+    #ruzgaroku-three{
+        display: flex;
+    }
+
+    #ruzgaroku-three p{
+        padding-left: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media screen and (max-width:752px){
+
+    #ruzgaroku-two{
+        display:block;
+    }
+
+    #ruzgaroku-two p{
+        padding-left: 0px;
+        padding-bottom:20px;
+        margin-top:none;
+        margin-bottom: none;
+    }
+
+    #ruzgaroku-three{
+        display:block;
+    }
+
+    #ruzgaroku-three p{
+        padding-left: 0px;
+        padding-top:20px;
+        margin-top: none;
+        margin-bottom: none;
+    }
+
+    #ruzgaroku-four{
+        display:block;
+    }
+
+    #ruzgaroku-four p{
+        padding-right:0px;
+        padding-bottom:20px;
+        margin-top: none;
+        margin-bottom: none;
+    }
+
+    #ruzgaroku-img-one{
+        width:100%;
+    }
+
+    #ruzgaroku-img-two{
+        width:60%;
+    }
+
+    #ruzgaroku-img-three{
+        width:60%;
+    }
+
+    #ruzgaroku-img-four{
+        width:50%;
+    }
+}
+
+/*-----------------------------------------------*/
+
