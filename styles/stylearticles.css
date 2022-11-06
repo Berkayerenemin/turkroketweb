@@ -1,4 +1,5 @@
 @import url("stylemain.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 
 .article-main{
     display: grid;
@@ -21,7 +22,7 @@
     flex-direction: column;
     padding-bottom:50px;
     padding-right: 50px;
-    border-right: 1px solid #94918f;
+    border-right: 1px solid #c0c3c7;
 }
 
 @media screen and (max-width:1028px){
@@ -70,6 +71,29 @@
     /*max-height: 22vh;*/
     width: 100%;
 }
+
+blockquote{
+    font-size: 16px;
+    width:100%;
+    font-family:Open Sans;
+    font-style:italic;
+    color: #555555;
+    padding:20px;
+    margin-left:0px;
+    border-left:6px solid rgb(36, 91, 149);
+    line-height:1.6;
+    background:#eff0f1;
+    border-radius: 5px;
+  }
+  
+  blockquote span{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+/*--------------------------------------------*/
 
 #turbojet-one{
     display: flex;
@@ -541,3 +565,4 @@
 #itmekuvveti-img-four{
     width:200px;
 }
+

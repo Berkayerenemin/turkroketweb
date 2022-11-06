@@ -46,7 +46,7 @@
     overflow: scroll;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #94918f;
+    border-right: 1px solid #c0c3c7;
     padding-bottom:50px;
 }
 
@@ -149,7 +149,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: auto;
-    border-bottom: 1px solid #94918f;
+    border-bottom: 1px solid #c0c3c7;
     padding-top: 14px;
     padding-bottom:14px;
 }
@@ -181,7 +181,7 @@
 .right-container{
     padding-left:20px;
     padding-right:55px;
-    border-bottom:1px solid #94918f;
+    border-bottom:1px solid #c0c3c7;
 }
 
 @media screen and (max-width:1405px){
